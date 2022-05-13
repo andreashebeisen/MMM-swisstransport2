@@ -8,7 +8,7 @@
  * MIT Licensed.
  */
 
-Module.register("MMM-swisstransport",{
+Module.register("MMM-swisstransport2",{
 
 	// Define module defaults
 	defaults: {
@@ -161,8 +161,8 @@ Module.register("MMM-swisstransport",{
 
     socketNotificationReceived: function(notification, payload) {
     	console.log(notification);
-        if (notification === 'TRAIN_CONNECTIONS') {
-            Log.info('received TRAIN_CONNECTIONS');
+        if (notification === 'TRAIN_CONNECTIONS2') {
+            Log.info('received TRAIN_CONNECTIONS2');
             var data = payload.trains;
 
             this.trains = [];

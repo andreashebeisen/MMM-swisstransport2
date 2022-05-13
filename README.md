@@ -10,7 +10,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 ````javascript
 modules: [
     {
-		module: 'MMM-swisstransport',
+		module: 'MMM-swisstransport2',
 		position: 'bottom_left',
 		header: 'Zugverbindungen',
 		config: {
