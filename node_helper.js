@@ -21,7 +21,7 @@ module.exports = NodeHelper.create({
         request({url: api_url, method: 'GET'}, function(error, response, body) {
             if (!error && response.statusCode == 200) {
                 var trains = JSON.parse(body);
-                self.sendSocketNotification('TRAIN_CONNECTIONS', {'trains':trains});
+                self.sendSocketNotification('TRAIN_CONNECTIONS2', {'trains':trains});
             }
         });
     },
